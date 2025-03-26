@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: url('https://motionarray.imgix.net/2239711-C07a6iQtWT-high_0003.jpg?w=660&q=60&fit=max&auto=format') no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.start {
+  background: green;
+  color: white;
+}
+
+.start:hover {
+  background: darkgreen;
+}
+
+.stop {
+  background: red;
+  color: white;
+}
+
+.stop:hover {
+  background: darkred;
+}
+
+.reset {
+  background: gray;
+  color: white;
+}
+
+.reset:hover {
+  background: darkgray;
+}
+
+@media (max-width: 576px) {
+  .container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .buttons {
+      flex-direction: column;
+  }
+
+  button {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+  }
+}
